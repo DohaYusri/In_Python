@@ -1,0 +1,32 @@
+#### (arguments) can be any type of data or collection:
+
+def f_name(country):
+        print(country)
+
+##we will call the function
+
+f_name({'c':'canada', 'c2':'egypt', 'c3':'italy'})
+#this function will print the dictionary in the argument
+
+but if we need to convert our arguments to dictionary in function, we have to do this:
+##we will put (**) with parametar
+
+def f_name(**country):
+        print(country)
+        
+##we will call the function 
+
+f_name(c='canada', c1='egypt', c3='italy')
+
+#this for dictionary ,what about the tuple:
+##we will put one (*) with parametar
+
+def f_name(*myelements):
+        print(myelements)
+        
+##we will call the function
+
+f_name('cat', 1, 2.5)
+        
+#we can use many arguments by using * with parametar name
+
