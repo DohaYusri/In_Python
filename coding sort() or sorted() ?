@@ -1,0 +1,31 @@
+##there 4 types of collection in python:
+[lists] / (tuples) / {dictionaries} / {sets} 
+
+lists are mutable , so we can sort the list without creating new one 
+list_name = [2,4,3,5,1]
+list_name.sort()
+list_name
+
+tuples are immutable , so we have to creat new tuple to sort old one
+tuple_name = (2,4,3,5,1)
+tuple_name2 = tuple(sorted(tuple_name))
+tuple_name2
+
+dictionaries contain slices which contain keys like indexes are immutable and values are mutable 
+by keys:
+dic_name = {'key2':2 , 'key4':4 , 'key3':3 , 'key5':5 , 'key1':1}
+dic_name2 = dict(sorted(dic_name.items()))
+dic_name2
+
+by values: we will add lambda function in sorted() 
+dict(sorted(dic_name.items() , key=lambda x:x[1]))
+
+sets are mutable for add values or remove ..etc but if we need to sort it, we have to creat new set
+set_name = {2,4,3,5,1}
+set_name2 = set(sorted(set_name))
+set_name2
+
+
+
+##NOTE:- we use typecasting like tuple(), dict(), set() to invert the result of list to the type we need in collection. 
+       - we can use print() to show the result or just write the name to show it.
