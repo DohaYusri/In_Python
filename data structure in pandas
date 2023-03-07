@@ -1,0 +1,27 @@
+##there the most widely used data structure in pandas:
+-data frame
+-series
+
+# data frame: is 2_D data (row and col),
+             created by loading datasets from exsiting storge like SQL, CSV, Excel...
+             variable_name = pandas.read_csv('the file address') or read_excel() or read_sql() as we need.. 
+             
+             or created from collection types we made like Dicts, Lists
+             variable_name = pandas.DataFrame(the dict)
+             
+             we can create a new data frame by take columns from exsiting data frame
+             x = df[['col names']] ###we use two bracket
+             
+             ---df means data frame, we can name it anything else for variable name exsiting data frame 
+             
+             
+# series: is 1_D array of indexed data (an array of actual data and an associated array of indexes)
+         created by getting a column of a data frame as series
+         x = df['col name'] ###we use one bracket
+         
+         ---we make sure of it by type(x) 
+         
+         or created from array we made or NumPy array
+            using pandas.series(the list or dict or array)
+            
+         ---we can make our index as we need like keys in dict or write index=[...] or set_index('...')
